@@ -41,16 +41,36 @@
   "WenQuanYi Micro Hei", sans-serif;
 }
 
+//css3动画  css属性 持续时间 速度曲线 延迟时间
+.transition(@css:all,@time:1s,@fun:ease,@start:0s){
+  transition: @css @time @fun @start;
+  -moz-transition: @css @time @fun @start;
+  /* Firefox 4 */
+  -webkit-transition: @css @time @fun @start;
+  /* Safari 和 Chrome */
+  -o-transition: @css @time @fun @start;
+  /* Opera */
+}
 
+#div1{
+  .center(20px);
+  width: 200px;
+  background-color: #a62;
+  position: absolute;
+}
+.ins{
+  margin-bottom: 10px;
+}
 .tips{
-  background-color:#000;
-  display:inline-block;
+  display:block;
   //  border:2px solid #000;
   z-index:0;
-  font-size: 12px;
   position: absolute;
+  .transition();
   .border_radius();
   .tips_title{
+    font-size: 12px;
+    background-color:#000;
     margin: 0;
     padding:6px 10px;
     position:relative;

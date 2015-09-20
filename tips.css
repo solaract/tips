@@ -1,9 +1,23 @@
-.tips {
-  background-color: #000;
-  display: inline-block;
-  z-index: 0;
-  font-size: 12px;
+#div1 {
+  margin: 20px auto 0 auto;
+  width: 200px;
+  background-color: #a62;
   position: absolute;
+}
+.ins {
+  margin-bottom: 10px;
+}
+.tips {
+  display: block;
+  z-index: 0;
+  position: absolute;
+  transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  /* Firefox 4 */
+  -webkit-transition: all 1s ease 0s;
+  /* Safari 和 Chrome */
+  -o-transition: all 1s ease 0s;
+  /* Opera */
   -moz-border-radius: 4px;
   /* Gecko browsers */
   -webkit-border-radius: 4px;
@@ -12,6 +26,8 @@
   /* W3C syntax */
 }
 .tips .tips_title {
+  font-size: 12px;
+  background-color: #000;
   margin: 0;
   padding: 6px 10px;
   position: relative;
